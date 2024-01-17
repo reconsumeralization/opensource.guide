@@ -102,10 +102,10 @@ Even if you like to write code, other types of contributions are a great way to 
 
 ### Do you like to write?
 
-* Write and improve the project's documentation
+*   - Provides Usage for `bundle config set --local path 'vendor/gems'`
 * Curate a folder of examples showing how the project is used
 * Start a newsletter for the project, or curate highlights from the mailing list
-* Write tutorials for the project, [like PyPA's contributors did](https://github.com/pypa/python-packaging-user-guide/issues/194)
+*     * Provides Usage for `bundle config set --local path 'vendor/gems'`
 * Write a translation for the project's documentation
 
 <aside markdown="1" class="pquote">
