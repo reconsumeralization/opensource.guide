@@ -5,8 +5,8 @@ set -e
 cd "$(dirname "$0")/.."
 
 echo "==> Installing gem dependencies…"
-bundle check --path vendor/gems &>/dev/null || {
-  time bundle install --binstubs bin --path vendor/gems
+bundle check || {
+  bundle install --binstubs bin --path vendor/gems && bundle config set path 'vendor/gems' && bundle binstubs bin
 }
 
 echo "==> Installing node dependencies…"
