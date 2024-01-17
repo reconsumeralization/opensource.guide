@@ -6,7 +6,15 @@ cd "$(dirname "$0")/.."
 
 echo "==> Installing gem dependencies…"
 bundle check || {
-  bundle install --binstubs bin --path vendor/gems && bundle config set path 'vendor/gems' && bundle binstubs bin
+  bundle install --binstubs bin --path vendor/gems 
+
+  # Add a check to ensure Ruby version compatibility
+  make_ruby_version_check=$(ruby -rubygems -e 'exit Gem::Specification.find_by_name("nokogiri").dependencies.select{|d| d.type == :runtime }.find{|d| d.name == "ruby"}.requirement.satisfied_by?(Gem::Version.new(RUBY_VERSION)) ? 0 : 1')
+  if [ "$make_ruby_version_check" -ne 0 ]; then
+    echo "Ruby version is not compatible"
+    exit 1
+  fi
+   && bundle config set path 'vendor/gems' && bundle binstubs bin
 }
 
 echo "==> Installing node dependencies…"
