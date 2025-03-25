@@ -1,7 +1,7 @@
 ---
 lang: ja
 title: リーダーシップと組織運営
-description: 意思決定するためのルールを決めることで、オープンソースプロジェクトを成長させる助けとなります
+description: 意思決定するためのルールを決めることで、オープンソースプロジェクトを成長させる助けとなります。
 class: leadership
 order: 6
 image: /assets/images/cards/leadership.png
@@ -81,7 +81,7 @@ related:
 
 その一方で、大きく複雑なプロジェクトでは、プロジェクトに対して熱心に献身している人のみにコミット権限を与えたいと思うかもしれません。唯一の正解はありません - あなたが最も良いと思うことをやりましょう。
 
-もしプロジェクトが GitHub 上にあるのであれば、 [protected branches](https://help.github.com/articles/about-protected-branches/) を使うことで、どいうった状況で誰が特定のブランチに push できるのかを管理することができます。
+もしプロジェクトが GitHub 上にあるのであれば、 [protected branches](https://help.github.com/articles/about-protected-branches/) を使うことで、どういった状況で誰が特定のブランチに push できるのかを管理することができます。
 
 <aside markdown="1" class="pquote">
   <img src="https://avatars.githubusercontent.com/felixge?s=180" class="pquote-avatar" alt="avatar">
